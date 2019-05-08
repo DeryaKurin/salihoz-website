@@ -1,0 +1,304 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ /* Top-header */
+
+ .body {
+  margin: auto;
+  padding: auto;
+}
+
+.top-header {
+  background-color: #E5E5E5;
+  display: block;
+  margin: 0 auto;
+  padding: auto;
+}
+
+.section {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: .5vh auto;
+  justify-content: flex-end;
+  max-width: 80%;
+  margin: 0 10%;
+}
+
+.section a {
+  color: #12547c;
+}
+
+.social-icon a {
+  padding-right: 1vw;
+}
+
+.social-icon a:hover {
+  color: #4d7f9b;
+}
+
+.mail i:hover,
+.phone i:hover {
+  color: #4d7f9b;
+}
+
+.mail,
+.phone {
+  padding-right: 3vw;
+}
+
+/* Header */
+
+
+nav ul a,
+nav {
+  color: #12547c;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.white {
+  height: 11rem;
+}
+
+.container {
+  padding: 1.6rem;
+}
+
+.nav-wrapper.ul {
+  margin-top: 6vh;
+}
+
+.sidenav-trigger {
+  color: #008FD3;
+}
+
+.sidenav {
+  background-color: #E5E5E5;
+  padding-top: 2vh;
+}
+.sidenav li a {
+  color: #12547c;
+}
+
+/* Main Banner */
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  padding-top: 14vh;
+  margin-right: -10vw;
+
+}
+.parallax-container .section {
+    max-width: 100%;
+}
+
+.parallax img {
+  margin-bottom: 10vh;
+  object-fit: contain;
+}
+
+
+.header,
+.row h6 {
+  padding-left: 20vw;
+}
+
+
+/* Services Section */
+
+.services {
+  margin: 4% auto;
+  width: 70%;
+  z-index: -2;
+  display: block;
+}
+
+
+.section-title {
+  width: 90%;
+  margin: 8vh auto 4vh;
+  text-align: right;
+}
+
+.section-title h4 {
+  border-bottom: 3.4px ridge #9E9E9E;
+  line-height: inherit;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  margin: 0 auto;
+}
+
+.icon-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon-section h5 {
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.icon-section img {
+  align-self: center;
+}
+
+
+/* Supporting-section  */
+
+.supporting-section {
+  max-width: 100%;
+  margin: 8vh auto;
+  max-width: 70%;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6vh;
+  text-align: left;
+}
+.box img {
+  max-width: 18vh;
+  margin: 0 6vw;
+}
+
+.text {
+  padding: 0 6vw;
+}
+
+
+
+footer.page-footer {
+  margin: 0;
+  background-color: #4d6477;
+}
+
+footer.page-footer i {
+  color: white;
+}
+
+footer.page-footer i:hover {
+  color: lightgrey;
+}
+
+@media only screen and (min-width : 921px) {
+  div#mobile-screen {
+    display: none;
+  }
+
+  .icon-section img {
+    max-width: 10rem;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .icon-section img {
+    align-self: center;
+  }
+
+  .box img {
+    max-width: 18vw;
+  }
+}
+
+@media only screen and (min-width : 993px) {
+  .box img {
+    max-width: 10.4rem;
+  }
+
+  .service {
+    padding: 2vh 2vw;
+  }
+
+  .icon-section {
+    padding: 2vh 0;
+  }
+
+  .rows {
+    padding: 2vh 0;
+  }
+}
+
+
+@media only screen and (max-width : 920px) {
+  div#large-screen {
+   display: none;
+  }
+
+  .icon-section img {
+    max-width: 16vw;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mail a,
+  .phone a,
+  .social-icon {
+    text-align: center;
+    display: block;
+    padding: auto;
+    margin: auto;
+  }
+
+  .jumbotron {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+  .icon-section img {
+    max-width: 18vw;
+  }
+ }
