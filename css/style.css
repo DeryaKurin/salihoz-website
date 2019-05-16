@@ -1,16 +1,13 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+* {
+  margin: 0;
+  padding: 0;
+}
 
- /* Top-header */
-
- .body {
+body {
   margin: auto;
   padding: auto;
+  background-image: linear-gradient(45deg, #e3e3e3 20%, #f0f0f0 20%, #f0f0f0 50%, #e3e3e3 50%, #e3e3e3 70%, #f0f0f0 70%, #f0f0f0 100%);
+  background-size: 7.07px 7.07px;
 }
 
 .top-header {
@@ -18,6 +15,8 @@
   display: block;
   margin: 0 auto;
   padding: auto;
+  font-size: .8rem;
+  font-weight: bolder;
 }
 
 .section {
@@ -26,8 +25,6 @@
   flex-direction: row;
   padding: .5vh auto;
   justify-content: flex-end;
-  max-width: 80%;
-  margin: 0 10%;
 }
 
 .section a {
@@ -66,19 +63,28 @@ p {
 
 .white {
   height: 11rem;
+  background-image: linear-gradient(45deg, #e3e3e3 20%, #f0f0f0 20%, #f0f0f0 50%, #e3e3e3 50%, #e3e3e3 70%, #f0f0f0 70%, #f0f0f0 100%);
+  background-size: 7.07px 7.07px;
 }
 
 .container {
   padding: 1.6rem;
 }
 
-.nav-wrapper.ul {
-  margin-top: 6vh;
+.nav-wrapper ul li a {
+  margin-top: 2rem;
+  font-weight: bolder;
 }
 
 .sidenav-trigger {
-  color: #008FD3;
+  /* color: #008FD3; Original logo color */
+  color: #086BC9;
 }
+
+#nav-mobile a {
+  margin-top: 0;
+}
+
 
 .sidenav {
   background-color: #E5E5E5;
@@ -96,7 +102,7 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
   padding-top: 14vh;
-  margin-right: -10vw;
+  /* margin-right: -10vw; */
 
 }
 .parallax-container .section {
@@ -114,11 +120,15 @@ p {
   padding-left: 20vw;
 }
 
+.waves a:hover {
+  background-color: rgba(193, 191, 191, 0.7) !important;
+}
+
 
 /* Services Section */
 
 .services {
-  margin: 4% auto;
+  margin: -2rem auto 8rem auto;
   width: 70%;
   z-index: -2;
   display: block;
@@ -153,7 +163,7 @@ p {
 }
 
 .icon-section h5 {
-  font-size: 2vh;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -165,9 +175,8 @@ p {
 /* Supporting-section  */
 
 .supporting-section {
-  max-width: 100%;
-  margin: 8vh auto;
-  max-width: 70%;
+  /* max-width: 100%;
+  padding: 8vh 15%; */
 }
 
 .jumbotron {
@@ -175,7 +184,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
+  margin: 4% 15%;
 }
 
 .box {
@@ -193,7 +202,11 @@ p {
   padding: 0 6vw;
 }
 
+/* .box.news-mobile {
+  display: none;
+} */
 
+/* Footer */
 
 footer.page-footer {
   margin: 0;
@@ -208,6 +221,28 @@ footer.page-footer i:hover {
   color: lightgrey;
 }
 
+footer.page-footer p {
+  padding-right: 4vw;
+}
+
+@media only screen and (max-width : 1160px) {
+  .jumbotron {
+    flex-direction: column;
+  }
+
+  .box {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width : 1161px) {
+  .jumbotron {
+    flex-direction: row;
+  }
+}
+
+
 @media only screen and (min-width : 921px) {
   div#mobile-screen {
     display: none;
@@ -216,6 +251,15 @@ footer.page-footer i:hover {
   .icon-section img {
     max-width: 10rem;
   }
+
+  .services {
+    margin: -2vh auto 6vh auto;
+  }
+
+  #small-footer {
+      display: none;
+    }
+
 }
 
 @media only screen and (max-width : 992px) {
@@ -256,12 +300,35 @@ footer.page-footer i:hover {
 
 
 @media only screen and (max-width : 920px) {
-  div#large-screen {
-   display: none;
-  }
-
   .icon-section img {
     max-width: 16vw;
+  }
+
+  #large-screen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 720px) {
+  .box.news-large {
+    display: none;
+  }
+
+  .box.news-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width : 721px) {
+  .box.news-mobile {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width : 601px) {
+  #small-footer {
+    display: none;
   }
 }
 
@@ -275,9 +342,7 @@ footer.page-footer i:hover {
     justify-content: center;
   }
 
-  .mail a,
-  .phone a,
-  .social-icon {
+  .top-header {
     text-align: center;
     display: block;
     padding: auto;
@@ -300,5 +365,17 @@ footer.page-footer i:hover {
 
   .icon-section img {
     max-width: 18vw;
+  }
+
+  .icon-section h5 {
+    font-size: 1rem !important;
+  }
+
+  #large-footer {
+    display: none;
+  }
+
+  .footer-row.social-icon {
+    text-align: center;
   }
  }
