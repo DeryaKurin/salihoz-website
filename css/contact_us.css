@@ -1,0 +1,164 @@
+/* Header - Footer shared styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  padding: auto;
+  background-image: linear-gradient(45deg, #e3e3e3 20%, #f0f0f0 20%, #f0f0f0 50%, #e3e3e3 50%, #e3e3e3 70%, #f0f0f0 70%, #f0f0f0 100%);
+  background-size: 7.07px 7.07px;
+}
+
+.top-header {
+  background-color: #E5E5E5;
+  display: block;
+  margin: 0 auto;
+  padding: auto;
+  font-size: .8rem;
+  font-weight: bolder;
+}
+
+.section {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: .5vh auto;
+  justify-content: flex-end;
+}
+
+.section a {
+  color: #12547c;
+}
+
+.social-icon a {
+  padding-right: 1vw;
+}
+
+.social-icon a:hover {
+  color: #4d7f9b;
+}
+
+.mail i:hover,
+.phone i:hover {
+  color: #4d7f9b;
+}
+
+.mail,
+.phone {
+  padding-right: 3vw;
+}
+
+/* Header */
+
+
+nav ul a,
+nav {
+  color: #12547c;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.white {
+  height: 11rem;
+  background-image: linear-gradient(45deg, #e3e3e3 20%, #f0f0f0 20%, #f0f0f0 50%, #e3e3e3 50%, #e3e3e3 70%, #f0f0f0 70%, #f0f0f0 100%);
+  background-size: 7.07px 7.07px;
+}
+
+.container {
+  padding: 1.6rem;
+}
+
+.nav-wrapper ul li a {
+  margin-top: 2rem;
+  font-weight: bolder;
+}
+
+.sidenav-trigger {
+  /* color: #008FD3; Original logo color */
+  color: #086BC9;
+}
+
+#nav-mobile a {
+  margin-top: 0;
+}
+
+
+.sidenav {
+  background-color: #E5E5E5;
+  padding-top: 2vh;
+}
+.sidenav li a {
+  color: #12547c;
+}
+
+
+/* Footer */
+
+footer.page-footer {
+  margin: 0;
+  background-color: #4d6477;
+}
+
+footer.page-footer i {
+  color: white;
+}
+
+footer.page-footer i:hover {
+  color: lightgrey;
+}
+
+footer.page-footer p {
+  padding-right: 4vw;
+}
+
+@media only screen and (min-width : 921px) {
+  div#mobile-screen {
+    display: none;
+  }
+
+  #small-footer {
+      display: none;
+  }
+}
+
+
+@media only screen and (max-width : 920px) {
+    #large-screen {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 601px) {
+  #small-footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top-header {
+    text-align: center;
+    display: block;
+    padding: auto;
+    margin: auto;
+  }
+
+  #large-footer {
+    display: none;
+  }
+
+  .footer-row.social-icon {
+    text-align: center;
+  }
+ }
+
+/* Header-Footer shared styling ends here */
